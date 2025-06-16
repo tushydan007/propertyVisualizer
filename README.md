@@ -14,3 +14,5 @@ I also used the following tech stacks:
 3. Tailwind CSS
 
 Since it's just a test app, There are no limitations.
+
+I have also included the Login form and the Sign up forms to make the app more real and interactive
