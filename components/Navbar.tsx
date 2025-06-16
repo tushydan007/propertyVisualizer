@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, ChevronRight} from "lucide-react";
+import { Menu, ChevronRight } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,7 +16,6 @@ type NavLink = {
 
 const Navbar = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [scrolled, setScrolled] = useState(false);
 
   const navLinks: NavLink[] = [
     {
@@ -55,11 +54,7 @@ const Navbar = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div
-                  className={`flex items-center cursor-pointer font-semibold ${
-                    scrolled ? "text-gray-800" : "text-white"
-                  } hover:text-red-600 transition duration-300 space-x-1`}
-                >
+                <div className="flex items-center cursor-pointer font-semibold text-white hover:text-red-600 transition duration-300 space-x-1">
                   <Link href={link.href}>{link.label}</Link>
                 </div>
                 <AnimatePresence>
@@ -99,9 +94,7 @@ const Navbar = () => {
             <Button asChild className="bg-red-600 hover:bg-red-800">
               <Link
                 href="/sign-up"
-                className={`transition duration-300 font-semibold ${
-                  scrolled ? "text-white" : "text-white"
-                }`}
+                className="transition duration-300 font-semibold text-white"
               >
                 Sign Up
               </Link>
@@ -113,9 +106,7 @@ const Navbar = () => {
             >
               <Link
                 href="/login"
-                className={`transition duration-300 font-semibold ${
-                  scrolled ? "text-gray-800" : "text-white"
-                }`}
+                className="transition duration-300 font-semibold text-white"
               >
                 Login
               </Link>
@@ -163,9 +154,7 @@ const Navbar = () => {
                     <Button asChild className="bg-red-700 hover:bg-red-800">
                       <Link
                         href="/sign-up"
-                        className={`transition duration-300 font-semibold ${
-                          scrolled ? "text-white" : "text-white"
-                        }`}
+                        className="transition duration-300 font-semibold text-white"
                       >
                         Register
                       </Link>
