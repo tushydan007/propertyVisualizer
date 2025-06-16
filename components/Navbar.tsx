@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
+import { Menu, ChevronRight} from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 
 type NavLink = {
