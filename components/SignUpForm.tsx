@@ -82,7 +82,6 @@ const SignUpForm = () => {
     register,
     handleSubmit,
     control,
-    reset,
     setValue,
     watch,
     formState: { errors, isSubmitting },
@@ -553,7 +552,6 @@ const SignUpForm = () => {
               >
                 {isSubmitting ? (
                   <span className="flex items-center justify-center gap-2">
-                    <SpinnerIcon />
                     Creating...
                   </span>
                 ) : (
