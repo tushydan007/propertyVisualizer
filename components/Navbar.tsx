@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <h2 className="text-white font-bold text-lg">
-                Property Visualizer
+                <Link href="/">Property Visualizer</Link>
               </h2>
             </Link>
           </div>
