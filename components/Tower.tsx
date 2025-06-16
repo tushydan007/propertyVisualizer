@@ -127,10 +127,10 @@ export default function Tower() {
             onClick={() => setSelectedLayout(null)}
             className="mb-4 text-blue-600 underline"
           >
-            Back to Layouts
+            Back to Floor
           </button>
           <h2 className="text-2xl font-bold text-center mb-12">
-            Layout Details
+            Property Details
           </h2>
           <div className="flex flex-col md:flex-row">
             <div className="flex-1">
