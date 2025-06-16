@@ -100,6 +100,7 @@ export default function Tower() {
                     alt="Layout Thumbnail"
                     width={400}
                     height={300}
+                    priority
                     className="w-full h-auto"
                   />
                 </div>
@@ -138,6 +139,7 @@ export default function Tower() {
                 alt="Layout Detail"
                 width={600}
                 height={400}
+                priority
                 className="rounded-xl shadow-lg mb-4"
               />
               <div className="text-lg">
